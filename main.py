@@ -143,37 +143,38 @@ class bank:
                else:
                      print("invalid input")                                  
 
+if __name__ == "__main__":
+    
+    user = bank()    
 
-user = bank()    
+    while True:
 
-while True:
+        print("1. Create an account")
+        print("2. Check balance")
+        print("3. Deposit money")
+        print("4. Withdraw money")
+        print("5. Details")
+        print("6. Update Details")
+        print("7. Exit")
 
-    print("1. Create an account")
-    print("2. Check balance")
-    print("3. Deposit money")
-    print("4. Withdraw money")
-    print("5. Details")
-    print("6. Update Details")
-    print("7. Exit")
+        action = int(input ("choose any serial no. "))
 
-    action = int(input ("choose any serial no. "))
-
-    if action == 1:
-        user.createaccount()
-    elif action == 2:
-        user.checkbalance()
-    elif action == 3:
-        user.depositmoney()
-    elif action == 4:
-        user.withdrawmoney()
-    elif action == 5:
-        user.details()
-    elif action == 6:
-        user.updatedetails()
-    elif action == 7:
-        break
-    else:
-        print("Invalid choice")
+        if action == 1:
+            user.createaccount()
+        elif action == 2:
+            user.checkbalance()
+        elif action == 3:
+            user.depositmoney()
+        elif action == 4:
+            user.withdrawmoney()
+        elif action == 5:
+            user.details()
+        elif action == 6:
+            user.updatedetails()
+        elif action == 7:
+            break
+        else:
+            print("Invalid choice")
             
 
  
